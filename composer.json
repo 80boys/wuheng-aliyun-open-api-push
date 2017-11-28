@@ -26,7 +26,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Aliyun\\Push\\": "src"
+      "Aliyun\\Push\\Request\\V20160801\\": "Push/Request/V20160801"
     }
   },
   "autoload-dev": {
