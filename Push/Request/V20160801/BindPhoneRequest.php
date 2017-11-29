@@ -17,7 +17,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Push\Request\V20160801;
+namespace Aliyun\Push\Request\V20160801;
 
 class BindPhoneRequest extends \RpcAcsRequest
 {
