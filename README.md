@@ -1,10 +1,10 @@
 # wuheng-aliyun-open-api-push
 aliyun-open-api-push 2.0 2016-08-01
 
-#使用方法
-#此版本 是官方SDK 2.0版本  composer 封装
-#首先 初始化 项目
-#composer 安装
+# 使用方法
+# 此版本 是官方SDK 2.0版本  composer 封装
+# 首先 初始化 项目
+# composer 安装
 
 new Aliyun\Core\Config();
 
@@ -15,9 +15,9 @@ $iClientProfile = Aliyun\Core\Profile\DefaultProfile::getProfile("cn-hangzhou", 
 $client         = new \Aliyun\Core\DefaultAcsClient($iClientProfile);
 $request        = new \Push\Request\V20160801\PushRequest();
 
-#各种初始化 赋值操作 
-#详情看 vendor\wuheng\aliyun-open-api-push\Push\Request\V20160801\PushRequest.php
-#里面的代码
+# 各种初始化 赋值操作 
+# 详情看 vendor\wuheng\aliyun-open-api-push\Push\Request\V20160801\PushRequest.php
+# 里面的代码
 
 $request->setAppKey('你的用用 appkey');
 $request->setTitle('推送标题'); 
