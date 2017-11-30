@@ -1,10 +1,5 @@
-# wuheng-aliyun-open-api-push
-aliyun-open-api-push 2.0 2016-08-01
-
-# 使用方法
 # 此版本 是官方SDK openApi 2.0 版本  composer 封装
-# 首先 初始化 项目
-# composer 安装
+# composer 安装后 使用如下
 
 ``` php
 //初始化 核心sdk
