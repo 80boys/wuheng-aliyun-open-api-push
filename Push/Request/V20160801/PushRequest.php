@@ -18,7 +18,7 @@
  * under the License.
  */
 namespace Push\Request\V20160801;
-use Aliyun\Core\RpcAcsRequest;
+use Alicloud\Core\RpcAcsRequest;
 class PushRequest extends RpcAcsRequest
 {
 	function  __construct()

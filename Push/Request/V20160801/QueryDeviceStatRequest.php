@@ -17,8 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Aliyun\Push\Request\V20160801;
-use Aliyun\Core\RpcAcsRequest;
+namespace Alicloud\Push\Request\V20160801;
+use Alicloud\Core\RpcAcsRequest;
 class QueryDeviceStatRequest extends RpcAcsRequest
 {
 	function  __construct()
