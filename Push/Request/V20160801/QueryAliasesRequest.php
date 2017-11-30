@@ -18,8 +18,8 @@
  * under the License.
  */
 namespace Aliyun\Push\Request\V20160801;
-
-class QueryAliasesRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+class QueryAliasesRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{

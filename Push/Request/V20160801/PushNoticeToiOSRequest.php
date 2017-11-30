@@ -18,8 +18,8 @@
  * under the License.
  */
 namespace Aliyun\Push\Request\V20160801;
-
-class PushNoticeToiOSRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+class PushNoticeToiOSRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{

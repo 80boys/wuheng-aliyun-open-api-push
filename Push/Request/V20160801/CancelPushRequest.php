@@ -18,8 +18,8 @@
  * under the License.
  */
 namespace Aliyun\Push\Request\V20160801;
-
-class CancelPushRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+class CancelPushRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{

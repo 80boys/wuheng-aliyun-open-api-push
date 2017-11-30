@@ -17,9 +17,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Aliyun\Push\Request\V20160801;
-
-class PushRequest extends \RpcAcsRequest
+namespace Push\Request\V20160801;
+use Aliyun\Core\RpcAcsRequest;
+class PushRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{

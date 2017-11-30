@@ -18,8 +18,8 @@
  * under the License.
  */
 namespace Aliyun\Push\Request\V20160801;
-
-class QueryPushStatByAppRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+class QueryPushStatByAppRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{

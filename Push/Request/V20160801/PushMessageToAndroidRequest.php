@@ -18,8 +18,8 @@
  * under the License.
  */
 namespace Aliyun\Push\Request\V20160801;
-
-class PushMessageToAndroidRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+class PushMessageToAndroidRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{

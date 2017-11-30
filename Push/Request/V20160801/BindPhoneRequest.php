@@ -18,8 +18,8 @@
  * under the License.
  */
 namespace Aliyun\Push\Request\V20160801;
-
-class BindPhoneRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+class BindPhoneRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{

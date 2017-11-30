@@ -18,8 +18,8 @@
  * under the License.
  */
 namespace Aliyun\Push\Request\V20160801;
-
-class ListTagsRequest extends \RpcAcsRequest
+use Aliyun\Core\RpcAcsRequest;
+class ListTagsRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{
