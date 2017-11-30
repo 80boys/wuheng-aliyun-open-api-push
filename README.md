@@ -11,7 +11,7 @@ aliyun-open-api-push 2.0 2016-08-01
 ## $accessKeyId    = '你的accessKeyId '; 
 ##  $accessKeySecret = '你的 accessKeySecret';
  
-## $iClientProfile = Aliyun\Core\Profile\DefaultProfile::getProfile("cn-hangzhou", $accessKeyId, $accessKeySecret);
+` $iClientProfile = Aliyun\Core\Profile\DefaultProfile::getProfile("cn-hangzhou", $accessKeyId, $accessKeySecret);
 ## $client         = new \Aliyun\Core\DefaultAcsClient($iClientProfile);
 ## $request        = new \Push\Request\V20160801\PushRequest();
 
