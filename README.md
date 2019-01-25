@@ -10,7 +10,7 @@ $accessKeySecret = '你的 accessKeySecret';
  
 $iClientProfile = Aliyun\Core\Profile\DefaultProfile::getProfile("cn-hangzhou", $accessKeyId, $accessKeySecret);
 $client         = new \Aliyun\Core\DefaultAcsClient($iClientProfile);
-$request        = new \Push\Request\V20160801\PushRequest();
+$request        = new \Aliyun\Push\Request\V20160801\PushRequest();
 
 //中间各种初始化 赋值操作 
 //详情看 vendor\wuheng\aliyun-open-api-push\Push\Request\V20160801\PushRequest.php
