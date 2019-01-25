@@ -17,28 +17,19 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Alicloud\Push\Request\V20160801;
-use Alicloud\Core\RpcAcsRequest;
-class QueryPushDetailRequest extends RpcAcsRequest
+namespace Alicloud\Push\Request\V20160801; 
+use Alicloud\Core\RpcAcsRequest; 
+class QueryDevicesByAccountRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{
-		parent::__construct("Push", "2016-08-01", "QueryPushDetail");
+		parent::__construct("Push", "2016-08-01", "QueryDevicesByAccount");
 		$this->setMethod("POST");
 	}
 
-	private  $messageId;
-
 	private  $appKey;
 
-	public function getMessageId() {
-		return $this->messageId;
-	}
-
-	public function setMessageId($messageId) {
-		$this->messageId = $messageId;
-		$this->queryParameters["MessageId"]=$messageId;
-	}
+	private  $account;
 
 	public function getAppKey() {
 		return $this->appKey;
@@ -47,6 +38,15 @@ class QueryPushDetailRequest extends RpcAcsRequest
 	public function setAppKey($appKey) {
 		$this->appKey = $appKey;
 		$this->queryParameters["AppKey"]=$appKey;
+	}
+
+	public function getAccount() {
+		return $this->account;
+	}
+
+	public function setAccount($account) {
+		$this->account = $account;
+		$this->queryParameters["Account"]=$account;
 	}
 	
 }

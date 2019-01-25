@@ -17,8 +17,8 @@
  * specific language governing permissions and limitations
  * under the License.
  */
-namespace Alicloud\Push\Request\V20160801;
-use Alicloud\Core\RpcAcsRequest;
+namespace Alicloud\Push\Request\V20160801; 
+use Alicloud\Core\RpcAcsRequest; 
 class QueryTagsRequest extends RpcAcsRequest
 {
 	function  __construct()

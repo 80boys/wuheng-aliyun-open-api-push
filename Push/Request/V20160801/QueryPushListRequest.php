@@ -19,17 +19,43 @@
  */
 namespace Alicloud\Push\Request\V20160801; 
 use Alicloud\Core\RpcAcsRequest; 
-class UnbindPhoneRequest extends RpcAcsRequest
+class QueryPushListRequest extends RpcAcsRequest
 {
 	function  __construct()
 	{
-		parent::__construct("Push", "2016-08-01", "UnbindPhone");
+		parent::__construct("Push", "2016-08-01", "QueryPushList");
 		$this->setMethod("POST");
 	}
 
+	private  $pageSize;
+
+	private  $endTime;
+
 	private  $appKey;
 
-	private  $deviceId;
+	private  $startTime;
+
+	private  $page;
+
+	private  $pushType;
+
+	public function getPageSize() {
+		return $this->pageSize;
+	}
+
+	public function setPageSize($pageSize) {
+		$this->pageSize = $pageSize;
+		$this->queryParameters["PageSize"]=$pageSize;
+	}
+
+	public function getEndTime() {
+		return $this->endTime;
+	}
+
+	public function setEndTime($endTime) {
+		$this->endTime = $endTime;
+		$this->queryParameters["EndTime"]=$endTime;
+	}
 
 	public function getAppKey() {
 		return $this->appKey;
@@ -40,13 +66,31 @@ class UnbindPhoneRequest extends RpcAcsRequest
 		$this->queryParameters["AppKey"]=$appKey;
 	}
 
-	public function getDeviceId() {
-		return $this->deviceId;
+	public function getStartTime() {
+		return $this->startTime;
 	}
 
-	public function setDeviceId($deviceId) {
-		$this->deviceId = $deviceId;
-		$this->queryParameters["DeviceId"]=$deviceId;
+	public function setStartTime($startTime) {
+		$this->startTime = $startTime;
+		$this->queryParameters["StartTime"]=$startTime;
+	}
+
+	public function getPage() {
+		return $this->page;
+	}
+
+	public function setPage($page) {
+		$this->page = $page;
+		$this->queryParameters["Page"]=$page;
+	}
+
+	public function getPushType() {
+		return $this->pushType;
+	}
+
+	public function setPushType($pushType) {
+		$this->pushType = $pushType;
+		$this->queryParameters["PushType"]=$pushType;
 	}
 	
 }
