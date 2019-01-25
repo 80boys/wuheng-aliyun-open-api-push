@@ -7,6 +7,8 @@ new Aliyun\Core\Config();
 
 $accessKeyId     = '你的accessKeyId '; 
 $accessKeySecret = '你的 accessKeySecret';
+
+
  
 $iClientProfile = Aliyun\Core\Profile\DefaultProfile::getProfile("cn-hangzhou", $accessKeyId, $accessKeySecret);
 $client         = new \Aliyun\Core\DefaultAcsClient($iClientProfile);
